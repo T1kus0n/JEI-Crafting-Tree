@@ -177,5 +177,19 @@
   "gui.jeict.recipe_tree.jei_shortcut_open_tooltip": "Open the most recently used recipe-tree workspace",
   "gui.jeict.recipe_tree.jei_shortcut_add_tooltip": "Open JEI and choose a recipe to create the first tree",
   "gui.jeict.recipe_tree.workspace_click_to_edit": "Click this recipe tree to edit it in the current screen",
-  "message.jeict.recipe_tree_jei_unavailable": "JEI is not ready; unable to choose a recipe tree."
+  "message.jeict.recipe_tree_jei_unavailable": "JEI is not ready; unable to choose a recipe tree.",
+  "gui.jeict.recipe_tree.strategy_locked": "Locked",
+  "gui.jeict.recipe_tree.strategy_mix_available": "Mix Available",
+  "gui.jeict.recipe_tree.strategy_most_available": "Most Available",
+  "gui.jeict.recipe_tree.strategy_preferred_namespace": "Preferred Namespace",
+  "gui.jeict.recipe_tree.strategy_strict_components": "Strict Components",
+  "gui.jeict.recipe_tree.plan_source_available": "available",
+  "gui.jeict.recipe_tree.plan_source_unavailable": "unavailable",
+  "gui.jeict.recipe_tree.plan_source_priority": "priority=%s",
+  "gui.jeict.recipe_tree.plan_source_error": "error=%s",
+  "gui.jeict.recipe_tree.route_raw": "raw=%s",
+  "gui.jeict.recipe_tree.route_runs": "runs=%s",
+  "gui.jeict.recipe_tree.route_machines": "machines=%s",
+  "gui.jeict.recipe_tree.route_waste": "waste=%s",
+  "gui.jeict.recipe_tree.route_steps": "steps=%s"
 }

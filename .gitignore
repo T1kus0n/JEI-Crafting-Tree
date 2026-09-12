@@ -1,8 +1,12 @@
 # Gradle
 .gradle/
+.gradle-user-home/
 build/
 bin/
 out/
+
+# Claude Code
+.claude/
 
 # Minecraft / NeoForge run directories
 run/

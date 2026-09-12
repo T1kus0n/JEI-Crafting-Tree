@@ -177,5 +177,19 @@
   "gui.jeict.recipe_tree.jei_shortcut_open_tooltip": "最近使用したレシピツリーのワークスペースを開く",
   "gui.jeict.recipe_tree.jei_shortcut_add_tooltip": "JEIを開いてレシピを選択し、最初のツリーを作成",
   "gui.jeict.recipe_tree.workspace_click_to_edit": "このレシピツリーをクリックすると現在の画面で編集できます",
-  "message.jeict.recipe_tree_jei_unavailable": "JEIの準備ができていないため、レシピツリーを選択できません。"
+  "message.jeict.recipe_tree_jei_unavailable": "JEIの準備ができていないため、レシピツリーを選択できません。",
+  "gui.jeict.recipe_tree.strategy_locked": "固定",
+  "gui.jeict.recipe_tree.strategy_mix_available": "在庫優先",
+  "gui.jeict.recipe_tree.strategy_most_available": "最大在庫",
+  "gui.jeict.recipe_tree.strategy_preferred_namespace": "優先名前空間",
+  "gui.jeict.recipe_tree.strategy_strict_components": "厳密一致",
+  "gui.jeict.recipe_tree.plan_source_available": "利用可能",
+  "gui.jeict.recipe_tree.plan_source_unavailable": "利用不可",
+  "gui.jeict.recipe_tree.plan_source_priority": "優先度=%s",
+  "gui.jeict.recipe_tree.plan_source_error": "エラー=%s",
+  "gui.jeict.recipe_tree.route_raw": "原料=%s",
+  "gui.jeict.recipe_tree.route_runs": "実行回数=%s",
+  "gui.jeict.recipe_tree.route_machines": "機械=%s",
+  "gui.jeict.recipe_tree.route_waste": "廃棄=%s",
+  "gui.jeict.recipe_tree.route_steps": "手順=%s"
 }

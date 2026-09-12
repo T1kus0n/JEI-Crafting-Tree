@@ -177,5 +177,19 @@
   "gui.jeict.recipe_tree.jei_shortcut_open_tooltip": "打开上次使用的多配方树工作区",
   "gui.jeict.recipe_tree.jei_shortcut_add_tooltip": "打开 JEI 并选择配方以创建第一棵配方树",
   "gui.jeict.recipe_tree.workspace_click_to_edit": "点击此配方树即可在当前界面编辑",
-  "message.jeict.recipe_tree_jei_unavailable": "JEI 尚未就绪，无法选择配方树。"
+  "message.jeict.recipe_tree_jei_unavailable": "JEI 尚未就绪，无法选择配方树。",
+  "gui.jeict.recipe_tree.strategy_locked": "锁定",
+  "gui.jeict.recipe_tree.strategy_mix_available": "混用库存",
+  "gui.jeict.recipe_tree.strategy_most_available": "库存最多",
+  "gui.jeict.recipe_tree.strategy_preferred_namespace": "优先命名空间",
+  "gui.jeict.recipe_tree.strategy_strict_components": "严格组件",
+  "gui.jeict.recipe_tree.plan_source_available": "可用",
+  "gui.jeict.recipe_tree.plan_source_unavailable": "不可用",
+  "gui.jeict.recipe_tree.plan_source_priority": "优先级=%s",
+  "gui.jeict.recipe_tree.plan_source_error": "错误=%s",
+  "gui.jeict.recipe_tree.route_raw": "原料=%s",
+  "gui.jeict.recipe_tree.route_runs": "运行=%s",
+  "gui.jeict.recipe_tree.route_machines": "机器=%s",
+  "gui.jeict.recipe_tree.route_waste": "废料=%s",
+  "gui.jeict.recipe_tree.route_steps": "步骤=%s"
 }

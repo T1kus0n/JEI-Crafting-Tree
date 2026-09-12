@@ -84,7 +84,8 @@ public final class RecipeTreePlanReportScreen extends Screen {
             RecipeRouteComparator.Comparison comparison = RecipeRouteComparator.compare(results);
             List<RouteLine> built = new ArrayList<>();
             for (int i = 0; i < strategies.size(); i++) {
-                built.add(new RouteLine(strategies.get(i).name(), comparison.scores().get(i),
+                built.add(new RouteLine(Component.translatable(strategies.get(i).translationKey()).getString(),
+                        comparison.scores().get(i),
                         i == comparison.recommendedIndex()));
             }
             minecraft.execute(() -> {
@@ -140,8 +141,12 @@ public final class RecipeTreePlanReportScreen extends Screen {
         lines.add("");
         lines.add(Component.translatable("gui.jeict.recipe_tree.plan_inventory_sources").getString());
         CraftingTreeInventorySources.statuses().forEach(status -> lines.add("  " + status.id() + "  "
-                + (status.available() ? "available" : "unavailable") + "  p=" + status.priority()
-                + (status.error().isEmpty() ? "" : "  error=" + status.error())));
+                + Component.translatable(status.available() ? "gui.jeict.recipe_tree.plan_source_available"
+                        : "gui.jeict.recipe_tree.plan_source_unavailable").getString()
+                + "  " + Component.translatable("gui.jeict.recipe_tree.plan_source_priority",
+                        status.priority()).getString()
+                + (status.error().isEmpty() ? "" : "  " + Component.translatable(
+                        "gui.jeict.recipe_tree.plan_source_error", status.error()).getString())));
         lines.add("");
         lines.add(Component.translatable("gui.jeict.recipe_tree.plan_surplus_heading", result.totalWasteUnits()).getString());
         result.surplus().entrySet().stream().sorted(Map.Entry.comparingByKey())
@@ -166,9 +171,13 @@ public final class RecipeTreePlanReportScreen extends Screen {
     private record RouteLine(String name, RouteScore score, boolean recommended) {
         String format() {
             if (score == null) return name;
-            return (recommended ? "★ " : "  ") + name + "  raw=" + score.rawUnits() + " runs="
-                    + score.machineRuns() + " machines=" + score.distinctMachines() + " waste=" + score.wasteUnits()
-                    + " steps=" + score.steps();
+            return (recommended ? "★ " : "  ") + name + "  "
+                    + Component.translatable("gui.jeict.recipe_tree.route_raw", score.rawUnits()).getString() + " "
+                    + Component.translatable("gui.jeict.recipe_tree.route_runs", score.machineRuns()).getString() + " "
+                    + Component.translatable("gui.jeict.recipe_tree.route_machines",
+                            score.distinctMachines()).getString() + " "
+                    + Component.translatable("gui.jeict.recipe_tree.route_waste", score.wasteUnits()).getString() + " "
+                    + Component.translatable("gui.jeict.recipe_tree.route_steps", score.steps()).getString();
         }
     }
 }

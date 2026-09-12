@@ -5234,8 +5234,9 @@ public class RecipeTreeOverviewScreen extends Screen implements RecipeTreeJeiTra
 
     private void syncStrategyButton() {
         if (strategyButton == null) return;
+        SubstitutionStrategy strategy = RecipeTreeConfig.SUBSTITUTION_STRATEGY.get();
         strategyButton.setMessage(Component.translatable("gui.jeict.recipe_tree.overview_strategy",
-                RecipeTreeConfig.SUBSTITUTION_STRATEGY.get().name()));
+                Component.translatable(strategy.translationKey())));
     }
 
     private void openPlanReport() {
